@@ -2,18 +2,21 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>九九</title>
+<title>Servlet版電卓</title>
 </head>
-<body style="background-color: lightblue;">
-	<h1 style="background-color: blue;
-				color: white;">九九表</h1>
-			
-	<p><a href="Kuku">九九サーブレッド</a></p>
+<body>
+	<h1>Servlet版電卓</h1>
 	
-	<p><a href="New.jsp">九九サーブレッド</a></p>
-	
-	<footer style="background-color: blue;
-					color: white;">〇〇</footer>
-	
+	<form action="CalcServlet" method="post">
+		 <input type="text" name="inputData1">
+		 <select name="operator">
+		  <option value="+">+</option>
+		  <option value="-">-</option>
+		  <option value="*">×</option>
+		  <option value="/">/</option>
+		</select>
+		 <input type="text" name="inputData2">
+		 <input type="submit" value="送信">
+	</form>
 </body>
 </html>
